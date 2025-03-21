@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> para Katia </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ea;
+            margin: 0;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #3a5a40;
+            margin-bottom: 20px;
+        }
+
+        .garden {
+            display: flex;
+            gap: 40px;
+        }
+
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            animation: sway 2s infinite alternate ease-in-out;
+        }
+
+        @keyframes sway {
+            0% { transform: rotate(-3deg); }
+            100% { transform: rotate(3deg); }
+        }
+
+        .petal {
+            width: 50px;
+            height: 50px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        /* Posicionando pétalos */
+        .petal:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+        .petal:nth-child(2) { top: 50%; right: 0; transform: translateY(-50%); }
+        .petal:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%); }
+        .petal:nth-child(4) { top: 50%; left: 0; transform: translateY(-50%); }
+        .petal:nth-child(5) { top: 15px; left: 15px; }
+        .petal:nth-child(6) { top: 15px; right: 15px; }
+        .petal:nth-child(7) { bottom: 15px; left: 15px; }
+        .petal:nth-child(8) { bottom: 15px; right: 15px; }
+
+        /* Centro de la flor */
+        .center {
+            width: 35px;
+            height: 35px;
+            background: orange;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tallo y hojas */
+        .stem {
+            width: 8px;
+            height: 120px;
+            background: green;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .leaf {
+            width: 30px;
+            height: 20px;
+            background: green;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: -15px;
+            transform: rotate(-30deg);
+        }
+
+        .leaf:last-child {
+            left: auto;
+            right: -15px;
+            transform: rotate(30deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Para la Arquitecta Katia </h1>
+    <h2>De parte de los cabineros </h2>
+
+    <div class="garden">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+            <div class="stem">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+            </div>
+        </div>
+        
+         <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+            <div class="stem">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+            </div>
+        </div>
+        
+         <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+            <div class="stem">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+            </div>
+        </div>
+        
+         <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+            <div class="stem">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+            </div>
+        </div>
+        
+         <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+            <div class="stem">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+            </div>
+        </div>
+        
+         <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+            <div class="stem">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+            </div>
+        </div>
+        
+
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+            <div class="stem">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+            </div>
+        
+    </div>
+
+</body>
+</html>
+ 
